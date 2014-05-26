@@ -1,4 +1,4 @@
 Rails Tutorial
 ==
 
-Ruby on Rails Tutorial for learning and testing github configuration.
+Ruby on Rails Tutorial (pass #2) for deeper learning and testing github configuration.
