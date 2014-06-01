@@ -1,13 +1,13 @@
 class Owner
 
-  def name
-    name = 'Foobar Kadigan'
+  attr_accessor :name
+  attr_accessor :birthdate
+  
+  def initialize()
+    @name = 'Foobar Kadigan'
+    @birthdate = Date.new(1964, 05, 28)
   end
-
-  def birthdate
-    birthdate = Date.new(1964, 05, 28)
-  end
-
+  
   def countdown
     today = Date.today
     birthday = Date.new(today.year, birthdate.month, birthdate.day)
