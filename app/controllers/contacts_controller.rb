@@ -7,10 +7,17 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(secure_params)
     if @contact.valid?
-      # TODO save data
+      
+      # save data
       @contact.update_spreadsheet
-      # TODO send message
+      
+      # send user an email to welcome them
+      UserMailer.contact_email(@contact).deliver
+      
+      # send success message to user     
       flash[:notice] = "Message sent from #{@contact.name}."
+      
+      # send user to home page
       redirect_to root_path
     else
       render :new
