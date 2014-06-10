@@ -32,10 +32,13 @@ class ContactsController < ApplicationController
  
   
 #  def process_form # action
-#    Rails.logger.debug "DEBUG: params are #{params[:abc]}"
+#  Rails.logger.debug "DEBUG: params are #{params[:abc]}"
 #    flash[:notice] = "Received request from #{params[:contact][:name]}"
 #    redirect_to root_path
 #  end
 
 end 
+
+
+
 
